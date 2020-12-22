@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+#stand{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+    background-color: brown;
+    z-index: 2;
+    .present{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: #fff;
+        top: -55px;
+        animation:light 2s linear infinite;
+    }
+    .present:nth-child(1){
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: rgb(0, 227, 235);
+        left: 200px;
+        border-radius: 4px;
+        border-top: 5px solid rgb(255, 251, 0);
+    }
+    .present:nth-child(2){
+        width: 50px;
+        height: 80px;
+        top: -85px;
+        position: absolute;
+        background-color: rgb(12, 233, 4);
+        left: 300px;
+        border-radius: 4px;
+        border-top: 5px solid rgb(255, 251, 0);
+    }
+    .present:nth-child(3){
+        width: 50px;
+        height: 60px;
+        top: -65px;
+        position: absolute;
+        background-color: rgb(243, 0, 211);
+        left: 540px;
+        border-radius: 4px;
+        border-top: 5px solid rgb(5, 147, 230);
+    }
+    .present:nth-child(4){
+        width: 50px;
+        height: 30px;
+        top: -35px;
+        position: absolute;
+        background-color: rgb(143, 253, 0);
+        left: 440px;
+        border-radius: 4px;
+        border-top: 5px solid rgb(68, 12, 172);
+    }
+    .present:nth-child(5){
+        width: 50px;
+        height: 30px;
+        top: -35px;
+        position: absolute;
+        background-color: rgb(217, 25, 255);
+        left: 230px;
+        border-radius: 4px;
+        border-top: 5px solid rgb(111, 67, 194);
+    }
+    .present:nth-child(6){
+        width: 70px;
+        height: 60px;
+        top: -65px;
+        position: absolute;
+        background-color: rgb(15, 247, 103);
+        left: 470px;
+        border-radius: 4px;
+        border-top: 5px solid rgb(111, 67, 194);
+    }
+    .present:nth-child(7){
+        width: 20px;
+        height: 60px;
+        top: -65px;
+        position: absolute;
+        background-color: rgb(235, 132, 14);
+        left: 280px;
+        border-radius: 4px;
+        border-top: 5px solid rgb(111, 67, 194);
+    }
+
+
+
+
+}
+#tree{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background:linear-gradient(90deg,#665557,#983);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .parts{
+        position: absolute;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        div{
+            width: 20px;
+            height: 20px;
+            background:linear-gradient(90deg,#665557,#983);
+            z-index: 22;
+            position: absolute;
+            border-radius: 50%;
+            z-index: 222;
+            animation:light 2s linear infinite;
+        }
+    }
+    .parts:nth-child(1){
+        width: 0; 
+        height: 0; 
+        border-top: 200px solid transparent;
+        border-left: 200px solid transparent;
+        border-right: 200px solid transparent;
+        border-bottom: 200px solid green;
+        transform: translateY(-90px);
+        z-index: 100;
+
+        div:nth-child(1){
+            top:100px;
+            left:65px;
+            width: 44px;
+            height: 44px;
+            background:linear-gradient(90deg,#28fd28,#983);
+        }
+        div:nth-child(2){
+            top:60px;
+            left:-10px;
+            width: 33px;
+            height: 33px;
+            background:linear-gradient(90deg,#0bf7ff,rgb(110, 4, 70))
+        }
+        div:nth-child(3){
+            top:130px;
+            left:10px;
+            width: 33px;
+            height: 33px;
+            background:linear-gradient(90deg,#0569ff,rgb(166, 255, 0))
+        }
+        div:nth-child(4){
+            top:150px;
+            left:-140px;
+            width: 33px;
+            height: 33px;
+            background:linear-gradient(90deg,#def700,rgb(6, 39, 230))
+        }
+        div:nth-child(5){
+            top:120px;
+            left:-80px;
+            width: 33px;
+            height: 33px;
+            background:linear-gradient(90deg,#370555,rgb(51, 153, 122))
+        }
+        div:nth-child(6){
+            top:160px;
+            left:100px;
+            width: 33px;
+            height: 33px;
+            background:linear-gradient(90deg,#370555,rgb(51, 153, 122))
+        }
+    }
+    .parts:nth-child(2){
+        width: 0; 
+        height: 0; 
+        border-top: 150px solid transparent;
+        border-left: 150px solid transparent;
+        border-right: 150px solid transparent;
+        border-bottom: 150px solid green;
+        transform: translateY(-150px);
+        z-index: 82;
+        div:nth-child(1){
+            top:80px;
+            left:-90px;
+            width: 35px;
+            height: 35px;
+            background:linear-gradient(290deg,#00f3b6,rgb(255, 213, 0))
+        }
+        div:nth-child(2){
+            top:80px;
+            left:50px;
+            width: 33px;
+            height: 33px;
+            background:linear-gradient(90deg,#67e202,#983)
+        }
+       
+    }
+    .parts:nth-child(3){
+        width: 0; 
+        height: 0; 
+        border-top:1000px solid transparent;
+        border-left:100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom:100px solid green;
+        transform: translateY(-650px);
+        z-index: 88;
+        div:nth-child(1){
+            top:30px;
+            left:5px;
+            width: 35px;
+            height: 35px;
+            background:linear-gradient(0deg,#05e2ff81,#983);
+        }
+        div:nth-child(2){
+            top:50px;
+            left:-50px;
+            width: 35px;
+            height: 35px;
+            background:linear-gradient(0deg,#fceb0081,rgb(255, 0, 0));
+        }
+        
+    }
+    
+
+#straw{
+    width: 50px;
+    height: 150px;
+    background-color: brown;
+    position: absolute;
+    bottom: 100px;
+    padding-top: 10px;
+}
+}
+img{
+    position: fixed;
+    z-index: 2222;
+    max-width: 44%;
+    transform: rotateY(180deg);
+    animation:light 2s linear infinite,santa 10s linear infinite;
+    transition-duration: .2s;
+    top: -10%;
+   
+}
+.presents{
+    position: absolute;
+    left: 360px;
+}
+@keyframes light{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+
+@keyframes santa{
+    0%{
+        left: -40%;
+        
+    }
+    100%{
+        left: 100%;
+       
+    }
+}
